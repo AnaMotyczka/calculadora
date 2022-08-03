@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="java.js"></script>
+    <link rel="stylesheet" type="text/css" href="detalhe.css">
+    <title>Att</title>
+</head>
+<body>
+
+    <h1>Calculadora do Jónison</h1>
+
+    <fieldset>
+        <legend>Escolha qual calculo será:</legend>
+        <p> 1- Calcular a velocidade média;</p> 
+        <p> 2- Calcular área de uma circunferência;</p> 
+        <p> 3- Calcular área do quadrado;</p> 
+        <p> 4- Calcular área do retângulo; </p>
+        <p> 5- Calcular o valor de desconto de um produto; </p> 
+        <p> 0- Sair;</p>
+        <br>
+        <p><input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' size="35" id="numero" placeholder="Digite um número." autofocus="autofocus"></p>
+        <p><button onclick="menu(numero.value)">Calcular</button>
+        <button onclick="apagar()">Apagar</button></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Resposta</legend>
+        <p><input type="text" id="total" size="35"  disabled ></p>
+        <p>*u é de unidade de medida, podendo ser: cm, m, dam...</p>
+    </fieldset>
+
+</body>
+</html>

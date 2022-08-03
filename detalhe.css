@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2? family = Dosis: wght @ 200; 400 & display = swap');
+
+:root{
+    --cor-titulo:#191970;
+    --cor-subtitulo: #00008B;
+    --cor-fundo:#f0f8ff ;
+    --cor-botao: #ADD8E6;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: 'Dosis', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: var(--cor-titulo);
+    text-shadow: 1px 1px black;
+}
+
+fieldset{
+    font-size: 17px;
+    border-style: dotted;
+}
+
+legend{
+    font-size: 20px;
+    color: var(--cor-subtitulo);
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--cor-botao);
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 50px;
+    height: 30px;
+}
